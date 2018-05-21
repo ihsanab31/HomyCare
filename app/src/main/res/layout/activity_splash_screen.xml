@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.sundevs.ihsan.homycare.view.activities.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="@dimen/dimen150dp"
+        android:layout_height="@dimen/dimen150dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_motherhood" />
+
+    <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:text="@string/cari_baby_siter"
+        android:textSize="@dimen/text20sp" />
+
+    <com.sundevs.ihsan.homycare.util.font.FontLatoSemiBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:text="@string/version"
+        android:textSize="@dimen/text16sp" />
+</LinearLayout>

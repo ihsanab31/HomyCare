@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "410860786582",
+    "firebase_url": "https://sundevs-15c0b.firebaseio.com",
+    "project_id": "sundevs-15c0b",
+    "storage_bucket": "sundevs-15c0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410860786582:android:dc187ffad2ce5244",
+        "android_client_info": {
+          "package_name": "com.sundevs.ihsan.nextgen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410860786582-k1tpo0vtltd1vt10a40fluq6s6s6toio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sundevs.ihsan.nextgen",
+            "certificate_hash": "f111f3649c63507eea6081a85d0a37288e3a7500"
+          }
+        },
+        {
+          "client_id": "410860786582-b6l4uc03stfm7dvu6e6f9vos0g2gbrfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVEkkChZMUdvoFBRkN_JDwWq_9zEljZYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410860786582-b6l4uc03stfm7dvu6e6f9vos0g2gbrfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410860786582:android:8cf2f9374dd791da",
+        "android_client_info": {
+          "package_name": "com.sundevs.ihsan.ustadapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410860786582-r9lbai9bfndtn8406v3575psem4q9vhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sundevs.ihsan.ustadapp",
+            "certificate_hash": "f111f3649c63507eea6081a85d0a37288e3a7500"
+          }
+        },
+        {
+          "client_id": "410860786582-b6l4uc03stfm7dvu6e6f9vos0g2gbrfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVEkkChZMUdvoFBRkN_JDwWq_9zEljZYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410860786582-b6l4uc03stfm7dvu6e6f9vos0g2gbrfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410860786582:android:336391a1ee4aa6fe",
+        "android_client_info": {
+          "package_name": "com.sundevs.ihsan.homycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410860786582-m50prarc29a5gns7abkqc1ct5j784te5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sundevs.ihsan.homycare",
+            "certificate_hash": "f111f3649c63507eea6081a85d0a37288e3a7500"
+          }
+        },
+        {
+          "client_id": "410860786582-b6l4uc03stfm7dvu6e6f9vos0g2gbrfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVEkkChZMUdvoFBRkN_JDwWq_9zEljZYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410860786582-b6l4uc03stfm7dvu6e6f9vos0g2gbrfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

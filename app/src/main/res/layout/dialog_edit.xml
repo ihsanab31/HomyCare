@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parkir_mall"
+    android:orientation="vertical"
+    tools:context="com.sundevs.ihsan.homycare.view.dialog.EditDialog">
+
+    <include layout="@layout/header_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen10dp">
+
+        <EditText
+            android:id="@+id/et_nama_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@color/white"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/et_alamat_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:background="@color/white"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/et_nohp_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:background="@color/white"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:background="@color/color_buttondetail"
+            android:text="@string/edit"
+            android:textStyle="bold"
+            android:textSize="@dimen/text16sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

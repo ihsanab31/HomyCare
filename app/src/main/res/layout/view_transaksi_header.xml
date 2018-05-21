@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_transaksi"
+    android:layout_height="wrap_content"
+    android:background="@color/color_buttondetail"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/half_normal_margin"
+    android:paddingTop="@dimen/half_normal_margin">
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashboard_search_container_height"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:padding="@dimen/small_margin"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/ic_three_dot"
+            android:tint="@color/white"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:id="@+id/ic_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/ic_back_white"
+            android:tint="@color/white" />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_margin">
+
+            <Button
+                android:id="@+id/proses"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="@dimen/dashboard_menu_item_height"
+                android:layout_marginStart="@dimen/half_normal_margin"
+                android:background="@drawable/bg_transaksi"
+                android:singleLine="true"
+                android:text="@string/progress"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/half_normal_margin" />
+
+            <Button
+                android:id="@+id/selesai"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="@dimen/dashboard_menu_item_height"
+                android:layout_marginStart="@dimen/half_normal_margin"
+                android:background="@drawable/bg_transaksi"
+                android:singleLine="true"
+                android:text="@string/selasai"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/half_normal_margin"/>
+
+
+        </LinearLayout>
+</LinearLayout>

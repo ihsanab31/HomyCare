@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="@dimen/elevation_xsmall"
+    android:foreground="?attr/selectableItemBackground"
+    android:translationZ="0dp"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:cropToPadding="true"
+        android:elevation="@dimen/elevation_small"
+        android:src="@drawable/ic_chef"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:elevation="@dimen/elevation_small"
+        android:includeFontPadding="false"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="@drawable/selector_color_enable_disable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+    <TextView
+        android:elevation="@dimen/elevation_small"
+        android:id="@+id/tv_notif_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_notif_normal"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minHeight="@dimen/dimen_notif_normal"
+        android:minWidth="@dimen/dimen_notif_normal"
+        android:paddingBottom="1dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="1dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize12sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_icon"
+        app:layout_constraintRight_toLeftOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sundevs.ihsan.homycare.view.activities.MainActivity">
+
+    <include layout="@layout/header_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen180dp"
+        android:gravity="center"
+        android:background="@drawable/background_menu_grid"
+        android:orientation="vertical">
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:id="@+id/image_users"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_circle_user"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/emty_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+        <LinearLayout
+            android:id="@+id/ll_header_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen5dp"
+           android:layout_marginTop="@dimen/dimen10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_small"
+                android:text="Jhon Doe"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_margin="4dp"
+                android:background="#40FFFFFF"
+                android:elevation="@dimen/elevation_small" />
+
+            <TextView
+                android:id="@+id/tv_no_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_small"
+                android:text="#0123456789"
+                android:textColor="@color/color_user_id"
+                android:textSize="@dimen/textSize14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <GridView
+            android:id="@+id/gv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+    </ScrollView>
+
+</LinearLayout>

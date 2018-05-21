@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">HomyCare</string>
+    <string name="todo">TODO</string>
+    <string name="cari_baby_siter">Cari Baby Siter</string>
+    <string name="version">Versi Alfa</string>
+    <string name="login">Login</string>
+    <string name="daftar">Daftar</string>
+    <string name="deskripsi">HomyCare membantu anda untuk mencari \n Baby Siter yang anda harapkan \n dari wilayah terdekan anda </string>
+    <string name="label_list_bs">CARI</string>
+    <string name="label_promosi">HITORY</string>
+    <string name="label_navigasi">MAPS</string>
+    <string name="label_menu_member">PROFILE</string>
+    <string name="label_belanja">BELANJA</string>
+    <string name="label_uang">UANG</string>
+    <string name="label_menu_event">EVENT</string>
+    <string name="label_market">MARKET</string>
+    <string name="label_explorer">EXPLORER</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_desc">Sign in with your phone to search baby siter and information from HomyCare</string>
+    <string name="email_address">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="ok">Ok</string>
+    <string name="nama">Nama</string>
+    <string name="no_hp">No. Hp</string>
+    <string name="alamat">Alamat</string>
+    <string name="daftar_user">Daftar User</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="default_name">Licca Purnama</string>
+    <string name="default_umur">23 Tahun</string>
+    <string name="default_alamat">Jln. Manisi No. 45 Cibiru</string>
+    <string name="kherma_yunita_sari">Kherma Yunita Sari</string>
+    <string name="edit">edit</string>
+    <string name="API_KEY">AIzaSyBlcY38aRxEmpg84JO6oq5lBgFYoejF7Yc</string>
+    <string name="default_nohp">087825382796</string>
+    <string name="ganti_password">ganti password</string>
+    <string name="quickstart_message">Click the SUBSCRIBE TO NEWS button below to subscribe to the
+        news topic. Messages sent to the news topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="gps_disabled_message">Plaese turn on your gps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selasai">Selasai</string>
+    <string name="progress">progress</string>
+    <string name="booking">Booking</string>
+    <string name="about_me">About Me</string>
+    <string name="sms">SMS</string>
+    <string name="telepon">Telepon</string>
+    <string name="whatsapp">whatsapp</string>
+</resources>

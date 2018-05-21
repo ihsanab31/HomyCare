@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/color_transparan" />
+    <item android:state_activated="true" android:color="@color/color_transparan" />
+    <item android:state_active="true" android:color="@color/color_transparan" />
+    <item android:state_focused="true" android:color="@color/color_transparan" />
+    <item android:state_pressed="true" android:color="@color/color_transparan" />
+    <item android:state_checked="true" android:color="@color/color_transparan" />
+    <item android:state_first="true" android:color="@color/color_transparan" />
+    <item android:color="@color/color_darker_30" />
+</selector>
