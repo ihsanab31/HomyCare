@@ -54,4 +54,5 @@
     <string name="sms">SMS</string>
     <string name="telepon">Telepon</string>
     <string name="whatsapp">whatsapp</string>
+    <string name="logout">Logout</string>
 </resources>

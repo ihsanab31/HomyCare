@@ -169,4 +169,15 @@ public class MainActivity extends NormalActivity implements AdapterView.OnItemCl
         finish();
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        initDataUser();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initDataUser();
+    }
 }

@@ -1,5 +1,6 @@
 package com.sundevs.ihsan.homycare.view.dialog;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
@@ -32,7 +33,9 @@ public class EditDialog extends NormalActivity {
     EditText alamat;
     @BindView(R.id.et_nohp_edit)
     EditText nohp;
-    String id_user = "";
+    String id_user = "", namauser= "", alamatuser="", no_hpuser="",emailuser="", passworduser="";
+    SharedPreferences preference;
+
     private static final String TAG = EditDialog.class.getSimpleName();
 
     @Override
@@ -77,6 +80,15 @@ public class EditDialog extends NormalActivity {
                             if (Params.success == 1) {
                                 Log.d("v Add", jObj.toString());
                                 Toast.makeText(EditDialog.this, jObj.getString(Params.TAG_MESSAGE), Toast.LENGTH_SHORT).show();
+                                preference =
+                                        getApplicationContext().getSharedPreferences("data", 0);
+                                SharedPreferences.Editor editor = preference.edit();
+                                editor.putString("id_user", id_user);
+                                editor.putString("nama", nama.getText().toString());
+                                editor.putString("alamat", alamat.getText().toString());
+                                editor.putString("no_hp", nohp.getText().toString());
+                                editor.commit();
+
                                 finish();
                             } else {
                                 Toast.makeText(getApplicationContext(), jObj.getString(Params.TAG_MESSAGE), Toast.LENGTH_LONG).show();

@@ -58,7 +58,6 @@ public class ListBabyActivity extends NormalActivity implements LocationListener
     BSAdapter adapter;
     LocationManager locationManager;
     String provider;
-
     @Override
     protected int getActivityView() {
         return R.layout.activity_list_baby;
@@ -135,7 +134,6 @@ public class ListBabyActivity extends NormalActivity implements LocationListener
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
-
                                 JSONObject obj = response.getJSONObject(i);
                                 SusterModel j = new SusterModel();
                                 j.setId_suster(obj.getInt(Params.id_suster));
@@ -157,7 +155,6 @@ public class ListBabyActivity extends NormalActivity implements LocationListener
                             }
 
                         }
-                        // memberitahu adapter jika ada perubahan data
                         adapter.notifyDataSetChanged();
                         dismissProgressDialog();
                     }

@@ -48,37 +48,37 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+                <TextView
                     android:id="@+id/txt_nama_detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/default_name" />
 
-                <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+                <TextView
                     android:id="@+id/txt_umur_detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/default_umur" />
 
-                <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+                <TextView
                     android:id="@+id/txt_pendidikan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/default_alamat" />
 
-                <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+                <TextView
                     android:id="@+id/txt_alamat_detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/default_alamat" />
 
-                <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+                <TextView
                     android:id="@+id/txt_harga"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/default_alamat" />
 
-                <com.sundevs.ihsan.homycare.util.font.FontOpenSans
+                <TextView
                     android:id="@+id/txt_jarak_detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

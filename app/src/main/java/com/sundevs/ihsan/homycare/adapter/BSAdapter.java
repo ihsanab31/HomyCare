@@ -105,7 +105,6 @@ public class BSAdapter extends RecyclerView.Adapter<BSAdapter.ViewHolder> {
         public void setClickListener(ItemClickListener itemClickListener) {
             this.itemClickListener = itemClickListener;
         }
-        @SuppressLint("SetTextI18n")
         void bindTo(SusterModel susterModel) {
             if (imageLoader == null)
                 imageLoader = HomyCare.getInstance().getImageLoader();

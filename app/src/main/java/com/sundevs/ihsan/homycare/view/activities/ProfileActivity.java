@@ -9,6 +9,7 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.squareup.picasso.Picasso;
 import com.sundevs.ihsan.homycare.R;
 import com.sundevs.ihsan.homycare.util.param.BaseUrl;
+import com.sundevs.ihsan.homycare.util.pref.SessionManager;
 import com.sundevs.ihsan.homycare.view.base.NormalActivity;
 import com.sundevs.ihsan.homycare.view.dialog.EditDialog;
 
@@ -27,6 +28,7 @@ public class ProfileActivity extends NormalActivity {
     TextView alamat;
     SharedPreferences preferences;
     String nama1="",no_hp1="",images1="",alamat1="",id_user="";
+    SessionManager session;
     @Override
     protected int getActivityView() {
         return R.layout.activity_profile;
@@ -45,6 +47,7 @@ public class ProfileActivity extends NormalActivity {
 
 
     public void initView(){
+        session = new SessionManager(getApplicationContext());
         preferences = getApplicationContext().getSharedPreferences("data", 0);
         nama1 = preferences.getString("nama", null);
         no_hp1 = preferences.getString("no_hp", null);
@@ -66,5 +69,29 @@ public class ProfileActivity extends NormalActivity {
         intent.putExtra("id_user", id_user);
         startActivity(intent);
 
+    }
+    @OnClick(R.id.btn_logout)
+    void log(){
+        logoutUser();
+    }
+
+    private void logoutUser() {
+        session.logoutUser();
+        Intent intent = new Intent(getApplicationContext(), SplashScreenActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initView();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        initView();
     }
 }
