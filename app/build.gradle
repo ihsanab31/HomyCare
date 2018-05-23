@@ -28,12 +28,9 @@ android {
         }
     }
     sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
     }
 }
 
@@ -48,10 +45,10 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.1'
     implementation 'com.android.support:multidex:1.0.3'
 
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
     //butterknife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
@@ -66,18 +63,18 @@ dependencies {
     implementation 'com.android.support:support-v4:26.1.0'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     //firebase
-    compile 'com.github.jd-alexander:library:1.1.0'
+    implementation 'com.github.jd-alexander:library:1.1.0'
     //noinspection GradleCompatible
     implementation 'com.google.firebase:firebase-core:11.0.4'
     implementation 'com.google.firebase:firebase-messaging:11.0.4'
     //noinspection GradleCompatible
     implementation 'com.google.android.gms:play-services-maps:11.0.4'
-    compile 'com.google.android.gms:play-services-maps:11.0.4'
-    compile 'com.google.maps.android:android-maps-utils:0.5'
-    compile 'com.google.android.gms:play-services-location:11.0.4'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
     // lombok model
-    compile 'org.projectlombok:lombok:1.16.18'
-    compile 'javax.annotation:jsr250-api:1.0'
+    implementation 'org.projectlombok:lombok:1.16.18'
+    implementation 'javax.annotation:jsr250-api:1.0'
     annotationProcessor 'org.projectlombok:lombok:1.16.18'
     testImplementation 'junit:junit:4.12'
     annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
